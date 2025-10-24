@@ -1,13 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Block Fund</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startuper - Crowdfunding Platform</title>
+  <!-- Add your favicon, meta tags etc -->
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">Startuper</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/categories">Categories</a></li>
+          <li><a href="/create">Create Project</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Launch Your Startup Now</h1>
+      <p>Join our decentralized crowdfunding platform and bring your idea to life.</p>
+      <a class="btn btn-primary" href="/create">Start Your Project</a>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="container">
+      <h2>Explore by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <h3>Technology</h3>
+          <p>Innovative hardware, software & startups.</p>
+        </div>
+        <div class="category-card">
+          <h3>Art</h3>
+          <p>Creative projects, funding for artists.</p>
+        </div>
+        <div class="category-card">
+          <h3>Education</h3>
+          <p>EdTech, courses, learning platforms.</p>
+        </div>
+        <div class="category-card">
+          <h3>Health</h3>
+          <p>Health-tech, wellness & community impact.</p>
+        </div>
+        <div class="category-card">
+          <h3>Business</h3>
+          <p>Startups, services, enterprise ideas.</p>
+        </div>
+        <div class="category-card">
+          <h3>Community</h3>
+          <p>Social initiatives & non-profit crowdfunding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <!-- Example card: replicate or populate from React component / data -->
+        <div class="project-card">
+          <img src="/assets/project1.jpg" alt="Project 1" />
+          <h3>Project Title 1</h3>
+          <p>Short description of project #1.</p>
+          <p><strong>Raised:</strong> $ 12,300 • <strong>Goal:</strong> $ 20,000</p>
+          <a class="btn" href="/projects/1">View Details</a>
+        </div>
+        <div class="project-card">
+          <img src="/assets/project2.jpg" alt="Project 2" />
+          <h3>Project Title 2</h3>
+          <p>Short description of project #2.</p>
+          <p><strong>Raised:</strong> $ 8,100 • <strong>Goal:</strong> $ 15,000</p>
+          <a class="btn" href="/projects/2">View Details</a>
+        </div>
+        <!-- Add more cards as necessary -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Startuper. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- React/Vite mount point if using React -->
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
